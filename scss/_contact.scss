@@ -1,0 +1,46 @@
+/* Formulario de la pagina Contacto */
+
+@mixin estilos-para-formulario{
+    padding: map-get($estilos-contacto ,espaciado-interno);
+    margin:map-get($estilos-contacto ,margenes);
+    border: map-get($estilos-contacto ,bordes);
+    border-radius: map-get($estilos-contacto ,redondeo);
+    width: map-get($estilos-contacto,ancho);
+}
+.card__email{
+    @include estilos-para-formulario;
+
+}
+.card__nombres{
+    @include estilos-para-formulario;
+}
+.card__number{
+    @include estilos-para-formulario;
+}
+.card__mensaje{
+    @include estilos-para-formulario;
+}
+
+.form__section{
+    @extend .main__section;
+    background-color: $color-general;
+    flex-direction: column;
+    align-items: center;
+    height: 620px;
+    box-shadow:$sombras;
+}
+
+.button__submit{
+    font-size: 17px;
+    border:thin;
+    border-radius: 10px;
+    padding:5px 40px;
+    margin:10px;
+    background:$color-boton-compra;
+    color: $color-blanco;
+    transition: .3s;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.10);
+        }
+}

@@ -1,0 +1,55 @@
+/* BreakPoints(Media-queris) */
+@media screen and (max-width:576px){
+    @for $i from 1 through 3{
+        .tabla#{$i}{
+        display: flex;
+        justify-content: center;
+        margin: 10px 40px; 
+        }
+    }
+    .row{
+        display: flex;
+        justify-content: center;
+    }
+    .main__section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #boton-de-compra--carrito{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .img_banner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:768px){
+    .row{
+        display: flex;
+        justify-content: center;
+    }
+    @for $i from 1 through 3{
+        .tabla#{$i}{
+        display: flex;
+        justify-content: center;
+        margin: 10px 40px; 
+        }
+    }
+    .main__section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #boton-de-compra--carrito{
+        width: 100%;
+    }
+    .img_banner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

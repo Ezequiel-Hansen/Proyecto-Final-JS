@@ -1,0 +1,70 @@
+/* Maquetados de la pagina carrito de compras */
+.main__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: animations 1s ease 0s 1 normal both;
+}
+
+/* Creador de los contenedores del carrito */
+.section__card--carrito{
+    display: flex;
+    flex-direction: row;
+    border-radius: 6px;
+    margin: 15px;
+    padding: 20px 10px;
+    background-color: $color-blanco;
+    align-items: center;
+    width: 100%;
+    box-shadow: $sombras;
+}
+
+.card__image--carrito{
+    width:200px;
+    height:150px;
+    display: flex;
+    align-items: center;
+    object-fit: scale-down;
+    justify-self: flex-start;
+}
+.card__text--carrito{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    margin: 5px;
+    padding: 6px;
+    font-size: 17px;
+    justify-self: center;
+    text-transform: capitalize;
+}
+
+#boton-eliminar{
+    @include sizes(16px,7px,thin);
+    border-radius: 17px;
+    padding: 10px;
+    background-color: $color-boton-eliminar;
+    color: $color-blanco;
+    transition: .3s;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.10);
+        }
+}
+.section__boton{
+    display: flex;
+    align-items: center;
+}
+#boton-de-compra--carrito{
+    @include sizes(16px,7px,thin);
+    width: 600px;
+    border-radius: 15px;
+    padding:15px 20px;
+    background-color: $color-boton-compra;
+    color: $color-blanco;
+    transition: .3s;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+}

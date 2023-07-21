@@ -1,0 +1,82 @@
+/* Titulo y Imagen de la pagina Producto */
+.main__h1{
+    text-align: center;
+    margin-right:20px ;
+    margin-left:20px ;
+    padding: 150px;
+    color: $color-blanco;
+    background-image: url('https://caliathletics.com/wp-content/uploads/2018/04/Building-your-body-with-calisthenics-.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 80%;
+    animation: banner 1s ease 0s 1 normal both;
+}
+
+p{
+    font-size:20px;
+}
+/* Maquetado de la pagina Productos */
+@for $i from 1 through 3{
+    .tabla#{$i}{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 40px;
+    padding: 5px;
+    }
+}
+/* Creador de los contenedores de los productos */
+.card{
+    display: flex;
+    align-items: center;
+    background-color:$color-blanco;
+    height: 480px;
+    gap: 25px;
+    justify-content: space-evenly;
+    width: 310px;
+    padding: 20px 0px 40px;
+    margin: 20px;
+    box-shadow:$sombras;
+    border:thin;
+    border-radius: 6px;
+    transition: .2s;
+        &:hover{
+            transform: scale(1.03);
+        }
+}
+.card__image{
+    margin: 10px 20px;
+    padding: 10px;
+    width:100%;
+    height:150px;
+    object-fit: scale-down;
+    display: grid;
+    place-items: center;
+}
+
+.card__text{
+    border-top: 1px solid $color-negro;
+    margin: 5px 8px;
+    padding: 8px 10px;
+    font-size: 17px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#boton-de-compra{
+    @include sizes(16px,7px,thin);
+    width: 200px;
+    border-radius: 15px;
+    padding:13px 20px;
+    background-color: $color-boton-compra;
+    color: $color-blanco;
+    transition: .3s;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.10);
+    }
+}

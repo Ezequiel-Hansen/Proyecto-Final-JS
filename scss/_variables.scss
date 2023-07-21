@@ -1,0 +1,37 @@
+$color-general:#191825;
+$color-parrafo:greenyellow;
+$color-blanco:white;
+$color-negro:black;
+$color-boton-compra:#0053a0;
+$color-boton-eliminar: rgb(221, 0, 0);
+$sombras: 0 5px 20px rgba(0, 0, 0, .3);
+$estilos-contacto:(espaciado-interno: 10px, margenes: 15px 5px, bordes: thin, redondeo: 6px, ancho:300px);
+@mixin sizes($font-size,$margin,$border){
+    font-size: $font-size;
+    margin: $margin;
+    border: $border;
+}
+@keyframes banner {
+	0% {
+        background-position: bottom;
+		background-size: 100%;
+	}
+
+	100% {
+        background-position: center;
+		background-size: 110%;
+	}
+}
+
+@keyframes animations {
+    0% {
+        opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+        opacity: 1;
+		transform: translateY(0);
+	}
+    
+}

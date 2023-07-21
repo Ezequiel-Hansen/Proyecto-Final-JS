@@ -1,0 +1,51 @@
+[
+    {
+        "id":1,
+        "nombre":"Set de 3 Bandas elasticas",
+        "precio":3500,
+        "imagen":"../img/conoces-mini-bandas-resistencia-entrenamiento.jpg",
+        "cat":"Banda Elastica"
+    },
+    {
+        "id":2,
+        "nombre":"Set de 5 bandas de resistencia",
+        "precio":5500,
+        "imagen":"../img/POWER_BANDS_Bandas_El_sticas_de_Resistencia_12.jpg",
+        "cat":"Banda Elastica"
+    },
+    {
+        "id":3,
+        "nombre":"Set de 5 Bandas de resistencia + Agarraderas",
+        "precio":10000,
+        "imagen":"../img/bandas-elasticas-2.jpg",
+        "cat":"Banda Elastica"
+    },
+    {
+        "id":4,
+        "nombre":"Paralelas de 70cm",
+        "precio":3500,
+        "imagen":"../img/img_67942-36362c4af8fb2eb96f15907878264295-240-0.jpg",
+        "cat":"Paralelas"
+    },
+    {
+        "id":5,
+        "nombre":"Barras Multifuncional",
+        "precio":20000,
+        "imagen":"../img/BARRA-MULTIFUNCIONAL-min.jpg",
+        "cat":"Barras"
+    },
+    {
+        "id":6,
+        "nombre":"Barras de Pared",
+        "precio":7500,
+        "imagen":"../img/Pullup-barra-ajustable-1-Sazman.jpg",
+        "cat":"Barras"
+    },
+    {
+        "id":7,
+        "nombre":"Paralela de Madera",
+        "precio":5000,
+        "imagen":"../img/WhatsApp-Image-2022-01-26-at-15.18.53.jpeg",
+        "cat":"Paralelas"
+    }
+]
