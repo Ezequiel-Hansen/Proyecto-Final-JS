@@ -28,7 +28,7 @@ class BD{
         this.productos=[]
     }
     async traeRegistro(){
-        const response= await fetch("/json/productos.json");
+        const response= await fetch("../json/productos.json");
         this.productos=await response.json();
         return this.productos;
         
@@ -241,4 +241,5 @@ function comprarTodoBoton(){
           })
     });
 }
+
 
